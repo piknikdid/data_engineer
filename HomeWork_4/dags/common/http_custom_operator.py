@@ -18,7 +18,7 @@ class Http_Custom_Operator(BaseOperator):
 
 
 
-    def execute(self):
+    def execute(self, context):
         conf = self.configuration.get_config(self.app)
 
         main_url = conf['url']
