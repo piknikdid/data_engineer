@@ -6,7 +6,7 @@ from airflow.models import BaseOperator
 from airflow.hooks.http_hook import HttpHook
 
 class Http_Custom_Operator(BaseOperator):
-    def __init__(self, configuration, date_st: datetime.date, app:str,  file_path, date_end: datetime.date = None):
+    def __init__(self, configuration, date_st: datetime.date, app:str,  file_path, date_end: datetime.date = None, **kwargs):
         super(Http_Custom_Operator, self).__init__(*args, **kwargs)
         self.configuration = configuration,
         self.date_st = date_st,
