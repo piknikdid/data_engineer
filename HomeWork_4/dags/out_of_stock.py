@@ -1,6 +1,5 @@
 from datetime import datetime, date
 import os
-from common.config import Config
 from airflow import DAG
 from common.http_custom_operator import Http_Custom_Operator
 
