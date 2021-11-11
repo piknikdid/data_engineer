@@ -1,0 +1,15 @@
+app:
+  url: https://robot-dreams-de-api.herokuapp.com
+  endpoint_auth: /auth
+  endpoint_app: /out_of_stock
+  username: rd_dreams
+  password: djT6LasE
+  directory: ./robot_dreams/
+
+
+pg_dshop:
+  host: 192.168.0.110
+  port: 5432
+  database: dshop
+  user: pguser
+  'password': secret
